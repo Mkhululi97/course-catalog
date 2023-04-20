@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,14 @@
 }
 html {
   font-size: 62.5%;
+  font-family: "outfit", sans-serif;
+}
+h1 {
+  font-size: 2.5rem;
+}
+body {
+  background-color: #023047;
+  color: #8ecae6;
 }
 /* general styles */
 nav,
@@ -19,13 +28,14 @@ footer {
 .description,
 .courses,
 .testimonials {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 p {
   font-size: 1.8rem;
 }
 .card-1,
-.card-2 {
+.card-2,
+.card-3 {
   border: solid 1px;
   padding: 20px;
 }
@@ -37,10 +47,14 @@ nav {
   display: flex;
   justify-content: space-between;
   border-bottom: solid 1px;
+  padding: 20px;
 }
 .nav-items {
   display: flex;
   gap: 10px;
+}
+ul {
+  font-size: 1.8rem;
 }
 /* COURSES SECTION */
 .course-cards {
@@ -49,7 +63,16 @@ nav {
 .card-2 {
   margin-top: 20px;
 }
+/* TESTIMONIAL SECTION */
+.testimonials .img-testimonials {
+  margin-top: 25px;
+}
+/* FOOTER SECTION */
+footer {
+  padding: 20px;
 
+  background-color: #219ebc;
+}
 /* ===== @ MEDIA QUERIES =====  */
 @media (min-width: 57.82em) {
   body {
@@ -63,7 +86,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
   .card-2 {
     margin-top: revert;
@@ -76,5 +99,12 @@ nav {
   }
   .social-links {
     font-size: 1.6rem;
+  }
+  a:link {
+    padding-left: 20px;
+  }
+  .footer-content {
+    /* position: fixed; */
+    /* bottom: 0; */
   }
 }
