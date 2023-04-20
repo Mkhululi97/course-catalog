@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+}
+/* general styles */
+nav,
+.description,
+.courses,
+.testimonials,
+footer {
+  padding-inline: 10px;
+}
+.description,
+.courses,
+.testimonials {
+  margin-top: 30px;
+}
+p {
+  font-size: 1.8rem;
+}
+.card-1,
+.card-2 {
+  border: solid 1px;
+  padding: 20px;
+}
+.courses-details {
+  border-top: solid 1px;
+}
+/*  NAV-BAR  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px;
+}
+.nav-items {
+  display: flex;
+  gap: 10px;
+}
+/* COURSES SECTION */
+.course-cards {
+  margin-top: 25px;
+}
+.card-2 {
+  margin-top: 20px;
+}
+
+/* ===== @ MEDIA QUERIES =====  */
+@media (min-width: 57.82em) {
+  body {
+    /* background-color: red; */
+  }
+  .container {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  .course-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+  .card-2 {
+    margin-top: revert;
+  }
+
+  /* FOOTER */
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .social-links {
+    font-size: 1.6rem;
+  }
+}

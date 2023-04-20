@@ -4,27 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Course Catalog</title>
   </head>
   <body>
     <header>
       <nav>
-        <img src="" alt="" />
-        <ul>
+        <!-- <img src="" alt="" /> -->
+        <p>LOGO</p>
+        <ul class="nav-items">
           <li>Home</li>
-        </ul>
-        <ul>
           <li>Courses</li>
-        </ul>
-        <ul>
           <li>About</li>
-        </ul>
-        <ul>
           <li>Contact</li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <div class="description">
         <p class="hero-text">
           Welcome to the local bootcamp brought to you by Imizamo Youth
@@ -33,26 +29,36 @@
       </div>
       <section class="courses">
         <h1>Courses</h1>
-        <div class="card-1">
-          <p>Course Name</p>
-          <p>R300</p>
-          <hr />
-          <p>details</p>
+        <div class="course-cards">
+          <div class="card-1">
+            <p>Course Name</p>
+            <p>R300</p>
+
+            <p class="courses-details">details</p>
+          </div>
+          <div class="card-2">
+            <p>Course Name</p>
+            <p>R300</p>
+
+            <p class="courses-details">details</p>
+          </div>
         </div>
       </section>
       <section class="testimonials">
         <div class="img-testimonials"></div>
       </section>
     </main>
-    <footer>
-      <div>
+    <footer class="container">
+      <div class="footer-content">
         <img src="" alt="" />
         <p>@ 2023</p>
         <p>address</p>
-        <a href="facebook">facebook</a>
-        <a href="twitter">twitter</a>
-        <a href="instagram">instagram</a>
-        <a href="linkedin">linkedin</a>
+        <div class="social-links">
+          <a href="facebook.com" target="_blank">facebook</a>
+          <a href="twitter.com" target="_blank">twitter</a>
+          <a href="instagram.com" target="_blank">instagram</a>
+          <a href="linkedin.com" target="_blank">linkedin</a>
+        </div>
       </div>
     </footer>
   </body>
