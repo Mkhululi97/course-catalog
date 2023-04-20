@@ -5,6 +5,10 @@ function tutorOvertimeWageCalculator(timesheet, level) {
   for (let i = 0; i < hours.length; i++) {
     totalHours += Number(hours[i]);
   }
-  let overTimePay = totalHours * 75 * 0.1;
-  console.log(overTimePay);
+  let overTimeHours = totalHours - 40;
+  let pay;
+  if (level === 1) {
+    pay = overTimeHours * 75;
+  }
+  console.log(pay);
 }
